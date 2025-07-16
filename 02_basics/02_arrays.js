@@ -18,9 +18,9 @@ const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
 const real_another_array = another_array.flat(Infinity)  // returns a new array with all sub-array elements concatenated into it recursively up to the specified depth.
 console.log(real_another_array)
 
-console.log(Array.isArray("Hitesh"))           // false
-console.log(Array.from("Hitesh"))              // [ 'H', 'i', 't', 'e', 's', 'h' ] , converts the given value to an array
-console.log(Array.from({name: "hitesh"}))      // [] , because we haven't mentioned which one to be converted 'key' or 'value' 
+console.log(Array.isArray("Rishabh"))           // false
+console.log(Array.from("Rishabh"))              // [ 'H', 'i', 't', 'e', 's', 'h' ] , converts the given value to an array
+console.log(Array.from({name: "rishabh"}))      // [] , because we haven't mentioned which one to be converted 'key' or 'value' 
 
 let score1 = 100
 let score2 = 200
