@@ -19,7 +19,7 @@ const real_another_array = another_array.flat(Infinity)  // returns a new array 
 console.log(real_another_array)
 
 console.log(Array.isArray("Rishabh"))           // false
-console.log(Array.from("Rishabh"))              // [ 'H', 'i', 't', 'e', 's', 'h' ] , converts the given value to an array
+console.log(Array.from("Rishabh"))              // [ 'R', 'i', 's', 'h', 'a', 'b' , 'h' ] , converts the given value to an array
 console.log(Array.from({name: "rishabh"}))      // [] , because we haven't mentioned which one to be converted 'key' or 'value' 
 
 let score1 = 100
