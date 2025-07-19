@@ -29,7 +29,7 @@ const obj4 = {5: "a", 6: "b"}
 
 // Alternative of Object.assign() -> spread operator (more preferred):-
 const obj3 = {...obj1, ...obj2, ...obj4}
-console.log(obj3)                               // { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }
+// console.log(obj3)                               // { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }
 
 // Array of Objects (used to fetch values from DB):-
 const users = [
@@ -47,11 +47,41 @@ const users = [
     },
 ]
 
-// users[1].email                                       // old way to fetch values
+// users[1].email                                          // old way to fetch values
 
-console.log(tinderUser)                                 // { id: '123abc', name: 'Sammy', isLoggedIn: false }
-console.log(Object.keys(tinderUser))                    // [ 'id', 'name', 'isLoggedIn' ]
-console.log(Object.values(tinderUser))                  // [ '123abc', 'Sammy', false ]
-console.log(Object.entries(tinderUser))                 // [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
+// console.log(tinderUser)                                 // { id: '123abc', name: 'Sammy', isLoggedIn: false }
+// console.log(Object.keys(tinderUser))                    // [ 'id', 'name', 'isLoggedIn' ]
+// console.log(Object.values(tinderUser))                  // [ '123abc', 'Sammy', false ]
+// console.log(Object.entries(tinderUser))                 // [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'))    // to check if the object has an specific property or not
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'))    // to check if the object has an specific property or not
+
+
+// Object destructuring & JSON APIs
+const course = {
+    coursename: "JS in hindi",
+    price: "999",
+    courseInstructor: "rishabh"
+}
+
+// 2 ways to extract values:-
+// course.courseInstructor     // 1st way
+
+// 2nd way:
+const {courseInstructor: instructor} = course   // destructuring (done using {}) -> renaming the 'courseInstructor' property to 'instructor' 
+// console.log(courseInstructor)
+console.log(instructor)
+
+// The following unnamed object is the structure of JSON:-
+// {
+//     "name": "hitesh",
+//     "coursename": "js in hindi",
+//     "price": "free"
+// }
+
+// Another way of representing JSON:
+// [
+//     {},
+//     {},
+//     {}
+// ]
